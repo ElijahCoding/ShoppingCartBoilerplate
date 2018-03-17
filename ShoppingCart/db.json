@@ -1,0 +1,55 @@
+{
+  "cart": [
+    {
+      "id": 1,
+      "title": "Coffee",
+      "description": "Beautiful coffee",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 5.99
+    },
+    {
+      "title": "Coffee",
+      "description": "Beautiful coffee",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 5.99,
+      "id": 2
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Coffee",
+      "description": "Beautiful coffee",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 5.99
+    },
+    {
+      "id": 2,
+      "title": "Tea",
+      "description": "Lovely tea",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 10.99
+    },
+    {
+      "id": 3,
+      "title": "Aubergine",
+      "description": "A single aubergine",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 0.5
+    },
+    {
+      "id": 4,
+      "title": "Banana",
+      "description": "A lovely yellow banana",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 0.9
+    },
+    {
+      "id": 5,
+      "title": "Toothpaste",
+      "description": "To brush your teeth",
+      "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=242%C3%97200&w=242&h=200",
+      "price": 2.5
+    }
+  ]
+}
