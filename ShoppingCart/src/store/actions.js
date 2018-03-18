@@ -17,6 +17,14 @@ export const addProductToCart = ({ commit }, { product, quantity }) => {
     quantity
   })
 }
+
 // get cart
+export const getCart = ({ commit }) => {
+  return axios.get('http://cartapi.test/api/cart').then((response) => {
+    commit('setCart', response.data)
+    return Promise.resolve()
+  })
+}
+
 // remove a product from our cart
 // remove all produts from our cart

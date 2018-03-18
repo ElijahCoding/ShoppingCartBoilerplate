@@ -3,6 +3,11 @@ export const setProducts = (state, products) => {
   state.products = products
 }
 
+// set cart
+export const setCart = (state, items) => {
+  state.cart = items
+}
+
 // append on cart
 export const appendToCart = (state, { product, quantity }) => {
   const existing = state.cart.find((item) => {
@@ -18,6 +23,5 @@ export const appendToCart = (state, { product, quantity }) => {
     })
   }
 }
-// set cart
 // clear cart
 // remove from cart
