@@ -31,4 +31,9 @@ export const removeProductFromCart = ({ commit }, productId) => {
   commit('removeFromCart', productId)
   return axios.delete(`http://cartapi.test/api/cart/${productId}`)
 }
+
 // remove all produts from our cart
+export const removeAllProductsFromCart = ({ commit }) => {
+  commit('clearCart')
+  return axios.delete(`http://cartapi.test/api/cart`)
+}

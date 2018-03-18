@@ -40,3 +40,6 @@ export const removeFromCart = (state, productId) => {
 }
 
 // clear cart
+export const clearCart = (state) => {
+  state.cart = []
+}

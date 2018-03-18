@@ -6,7 +6,7 @@
         {{ item.quantity }} x {{ item.product.title }} @ £{{ item.product.price }}
       </li>
       <li class="list-group-item">
-        <a href="#">Clear cart</a>
+        <a href="#" @click.prevent="removeAllProductsFromCart">Clear cart</a>
       </li>
     </ul>
     <p v-else>No items in cart</p>
@@ -28,7 +28,8 @@
     methods: {
       ...mapActions({
         getCart: 'getCart',
-        removeProductFromCart: 'removeProductFromCart'
+        removeProductFromCart: 'removeProductFromCart',
+        removeAllProductsFromCart: 'removeAllProductsFromCart'
       })
     },
 
