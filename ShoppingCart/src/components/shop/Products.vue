@@ -19,13 +19,13 @@
 
     computed: {
       ...mapGetters({
-        products: 'products'
+        products: 'shopping/products'
       })
     },
 
     methods: {
       ...mapActions({
-        getProducts: 'getProducts'
+        getProducts: 'shopping/getProducts'
       })
     },
 

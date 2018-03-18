@@ -21,15 +21,15 @@
 
     computed: {
       ...mapGetters({
-        cart: 'cart'
+        cart: 'shopping/cart'
       })
     },
 
     methods: {
       ...mapActions({
-        getCart: 'getCart',
-        removeProductFromCart: 'removeProductFromCart',
-        removeAllProductsFromCart: 'removeAllProductsFromCart'
+        getCart: 'shopping/getCart',
+        removeProductFromCart: 'shopping/removeProductFromCart',
+        removeAllProductsFromCart: 'shopping/removeAllProductsFromCart'
       })
     },
 

@@ -18,9 +18,9 @@
 
     computed: {
       ...mapGetters({
-        cartItemCount: 'cartItemCount',
-        cartTotal: 'cartTotal',
-        user: 'user'
+        cartItemCount: 'shopping/cartItemCount',
+        cartTotal: 'shopping/cartTotal',
+        user: 'auth/user'
       })
     }
   }

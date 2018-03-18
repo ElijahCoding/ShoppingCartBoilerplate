@@ -17,7 +17,7 @@
 
     methods: {
       ...mapActions({
-        addProductToCart: 'addProductToCart'
+        addProductToCart: 'shopping/addProductToCart'
       }),
 
       addToCart () {
