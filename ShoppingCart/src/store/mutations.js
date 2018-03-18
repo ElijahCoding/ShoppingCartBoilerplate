@@ -5,7 +5,10 @@ export const setProducts = (state, products) => {
 
 // append on cart
 export const appendToCart = (state, product) => {
-  state.cart.push(product)
+  state.cart.push({
+    product,
+    quantity: 1
+  })
 }
 // set cart
 // clear cart
