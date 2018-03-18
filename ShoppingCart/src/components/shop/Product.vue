@@ -15,7 +15,7 @@
 
     methods: {
       addToCart () {
-        
+
       }
     }
   }
