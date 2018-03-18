@@ -2,7 +2,7 @@
   <div class="mini-cart">
     <ul class="list-group" v-if="cart.length">
       <li class="list-group-item" v-for="item in cart">
-        <a href="#" class="badge">Remove</a>
+        <a href="#" class="badge" @click.prevent="removeProductFromCart(item.product.id)">Remove</a>
         {{ item.quantity }} x {{ item.product.title }} @ £{{ item.product.price }}
       </li>
       <li class="list-group-item">
@@ -27,7 +27,8 @@
 
     methods: {
       ...mapActions({
-        getCart: 'getCart'
+        getCart: 'getCart',
+        removeProductFromCart: 'removeProductFromCart'
       })
     },
 

@@ -23,5 +23,20 @@ export const appendToCart = (state, { product, quantity }) => {
     })
   }
 }
-// clear cart
+
 // remove from cart
+export const removeFromCart = (state, productId) => {
+  const existing = state.cart.find((item) => {
+    return item.product.id === productId
+  })
+
+  if (existing.quantity > 1) {
+    existing.quantity--
+  } else {
+    state.cart = state.cart.filter((item) => {
+      return item.product.id !== productId
+    })
+  }
+}
+
+// clear cart
