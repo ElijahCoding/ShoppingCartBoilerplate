@@ -1,6 +1,6 @@
 <template>
   <div class="message">
-
+    {{ message }}
   </div>
 </template>
 
@@ -12,7 +12,22 @@
       ...mapGetters({
         message: 'message'
       })
-    },
-    
+    }
+
   }
 </script>
+
+<style>
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  position: fixed;
+  top: 0; left: 0;
+  background-color: tomato;
+  color: #fff;
+  height: 60px;
+  width: 100%;
+}
+</style>

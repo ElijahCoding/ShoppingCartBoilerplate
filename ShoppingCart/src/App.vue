@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <message></message>
     <top-header></top-header>
     <div class="container">
       <router-view></router-view>
@@ -9,11 +10,12 @@
 
 <script>
   import TopHeader from '@/components/common/TopHeader'
+  import Message from '@/components/common/Message'
 
   export default {
     name: 'app',
     components: {
-      TopHeader
+      TopHeader, Message
     }
   }
 </script>
