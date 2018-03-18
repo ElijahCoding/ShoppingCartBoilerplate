@@ -9,8 +9,11 @@ export const getProducts = ({ commit }) => {
 }
 
 // add a product to our cart
-export const addProductToCart = ({ commit }, { product, quantity }) => {
+export const addProductToCart = ({ commit, dispatch }, { product, quantity }) => {
   commit('appendToCart', { product, quantity })
+
+  // Dispatch flashMessage
+  dispatch('flashMessage', 'Item added to cart', { root: true })
 
   return axios.post('http://cartapi.test/api/cart', {
     product_id: product.id,
@@ -33,7 +36,10 @@ export const removeProductFromCart = ({ commit }, productId) => {
 }
 
 // remove all produts from our cart
-export const removeAllProductsFromCart = ({ commit }) => {
+export const removeAllProductsFromCart = ({ commit, dispatch }) => {
   commit('clearCart')
+
+  dispatch('flashMessage', 'All items removed.', { root: true })
+
   return axios.delete(`http://cartapi.test/api/cart`)
 }
