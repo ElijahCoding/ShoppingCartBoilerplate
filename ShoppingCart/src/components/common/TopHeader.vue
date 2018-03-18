@@ -2,6 +2,10 @@
   <header class="header">
     <div class="container">
       {{ cartItemCount }} items in cart (£{{ cartTotal }})
+
+      <div class="pull-right" v-if="user.authenticated">
+        {{ user.data.name }}
+      </div>
     </div>
   </header>
 </template>
@@ -15,7 +19,8 @@
     computed: {
       ...mapGetters({
         cartItemCount: 'cartItemCount',
-        cartTotal: 'cartTotal'
+        cartTotal: 'cartTotal',
+        user: 'user'
       })
     }
   }
