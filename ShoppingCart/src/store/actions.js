@@ -10,7 +10,7 @@ export const getProducts = ({ commit }) => {
 
 // add a product to our cart
 export const addProductToCart = ({ commit }, { product, quantity }) => {
-  commit('appendToCart', product)
+  commit('appendToCart', { product, quantity })
 
   return axios.post('http://cartapi.test/api/cart', {
     product_id: product.id,
